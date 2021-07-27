@@ -3,10 +3,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
 
-import vehicleCardValue from "./components/VehicleCardVehicleCardValue";
+import VehicleCardValue from "./components/VehicleCardVehicleCardValue";
 import vehicleCardRef from "./components/VehicleCard/VehicleCardRef";
-import addVehicleCard from "./components/AddVehicle/AddVehicleCard";
-import vehicleCartCard from "./components/ShoppingCart/ShoppingCartCard";
+import AddVehicleCard from "./components/AddVehicle/AddVehicleCard";
+import ShoppingCartCard from "./components/ShoppingCart/ShoppingCartCard";
 
 function App() {
 	const addMakeRef = useRef();
