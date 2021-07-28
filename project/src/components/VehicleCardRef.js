@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from "react"
 import './VehicleCard.css'
 
 export default function VehicleCard(props) {
 
-    const [editBtn, setEditBtn] = useState(false)
+const [editBtn, setEditBtn] = useState(false)
 
     const editMakeRef = useRef()
     const editModelRef = useRef()
