@@ -206,7 +206,6 @@ function App() {
 						addPriceRef.current.value = "";
 					}}
 				/>
-<<<<<<< HEAD
 			)}
 			{vehicleState.map((e) => {
 				return (
@@ -217,19 +216,6 @@ function App() {
 						model={e.model}
 						price={e.price}
 						deleteVehicle={(id) =>
-=======
-				<p>-------------------------</p>
-
-				<h1>
-					<u>Vehicle Store</u>
-				</h1>
-				<button onClick={() => setShowAddCard((prev) => !prev)}>
-					{showAddCard ? "Hide Add Card" : "Show Add Card"}
-				</button>
-				{showAddCard && (
-					<AddVehicleCard
-						addVehicleFunc={(e) =>
->>>>>>> 6241769... uncommenting
 							vehicleDispatch({
 								type: "DELETE_VEHICLE",
 								id: id,
@@ -248,46 +234,10 @@ function App() {
 							})
 						}
 					/>
-<<<<<<< HEAD
 				);
 			})}
 		</div>
 	);
-=======
-				)}
-				{vehicleState.map((e) => {
-					return (
-						<VehicleCardValue
-							key={e.id}
-							id={e.id}
-							make={e.make}
-							model={e.model}
-							price={e.price}
-							deleteVehicle={(id) =>
-								vehicleDispatch({
-									type: "DELETE_VEHICLE",
-									id: id,
-								})
-							}
-							editVehicle={(param) =>
-								vehicleDispatch({
-									type: "EDIT_VEHICLE",
-									data: param,
-								})
-							}
-							addToCart={(param) =>
-								cartDispatch({
-									type: "ADD",
-									data: param,
-								})
-							}
-						/>
-					);
-				})}
-			</div>
-		);
-	}
->>>>>>> 6241769... uncommenting
 }
 
 export default App;
