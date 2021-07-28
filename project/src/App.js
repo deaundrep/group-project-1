@@ -190,7 +190,7 @@ function App() {
 				<button onClick={() => setShowAddCard((prev) => !prev)}>
 					{showAddCard ? "Hide Add Card" : "Show Add Card"}
 				</button>
-				{showAddCard && (
+				{/* {showAddCard && (
 					<AddVehicleCard
 						addVehicleFunc={(e) =>
 							vehicleDispatch({
@@ -210,7 +210,7 @@ function App() {
 							addPriceRef.current.value = "";
 						}}
 					/>
-				)}
+				)} */}
 				{vehicleState.map((e) => {
 					return (
 						<VehicleCardValue
