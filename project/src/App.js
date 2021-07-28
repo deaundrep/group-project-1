@@ -1,4 +1,4 @@
-import VehicleCardValue from "./components/VehicleCardVehicleCardValue";
+import VehicleCardValue from "./components/VehicleCard/VehicleCardVehicleCardValue";
 import vehicleCardRef from "./components/VehicleCard/VehicleCardRef";
 import AddVehicleCard from "./components/AddVehicle/AddVehicleCard";
 import ShoppingCartCard from "./components/ShoppingCart/ShoppingCartCard";
