@@ -7,7 +7,8 @@ export default function ShoppingCartVehicle(props) {
 
 	return (
 		<tr>
-			<td>{props.title}</td>
+			<td>{props.make}</td>
+			<td>{props.model}</td>
 			<td>{props.price}</td>
 			{/* <td>
                     Current: {props.quantity}

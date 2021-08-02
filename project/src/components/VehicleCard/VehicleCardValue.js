@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./VehicleCard.css";
 
-export default function VehicleCard(props) {
+export default function VehicleCardValue(props) {
 	const [editBtn, setEditBtn] = useState(false);
 	const [vehicleCardState, setVehicleCardState] = useState({
 		make: props.make,
@@ -47,7 +47,7 @@ export default function VehicleCard(props) {
 						<input
 							type="text"
 							name="make"
-							// ref={editMakeRef}
+							ref={props.editMakeRef}
 							value={vehicleCardState.make}
 							onChange={onChangeHandler}
 							placeholder={vehicleCardState.make}
@@ -57,7 +57,7 @@ export default function VehicleCard(props) {
 						<input
 							type="text"
 							name="model"
-							// ref={editModelRef}
+							ref={props.editModelRef}
 							value={vehicleCardState.model}
 							onChange={onChangeHandler}
 							placeholder={vehicleCardState.model}
@@ -67,7 +67,7 @@ export default function VehicleCard(props) {
 						<input
 							type="text"
 							name="price"
-							// ref={editPriceRef}
+							ref={props.editPriceRef}
 							value={vehicleCardState.price}
 							onChange={onChangeHandler}
 							placeholder={vehicleCardState.price}
@@ -80,10 +80,8 @@ export default function VehicleCard(props) {
 				</div>
 			) : (
 				<div>
-					<h2>
-						<u>{props.make}</u>
-					</h2>
-					<p>model: {props.model}</p>
+					<h2>{props.make}</h2>
+					<h2>Model: {props.model}</h2>
 					<p>Price: {props.price}</p>
 				</div>
 			)}

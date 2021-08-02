@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./VehicleCard.css";
 
-export default function VehicleCard(props) {
+export default function VehicleCardRef(props) {
 	const [editBtn, setEditBtn] = useState(false);
 
 	const editMakeRef = useRef();
@@ -36,7 +36,7 @@ export default function VehicleCard(props) {
 						<label htmlFor="Model">Model: </label>
 						<input
 							type="text"
-							name="Model"
+							name="model"
 							ref={editModelRef}
 							placeholder={props.Model}
 						/>

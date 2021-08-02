@@ -8,10 +8,10 @@ export default function AddVehicleCard(props) {
 				<h2>
 					<u>Add Video Vehicle</u>
 				</h2>
-				<label htmlFor="title-field">Title: </label>
+				<label htmlFor="make-field">Title: </label>
 				<input id="title-field" type="text" ref={props.addMakeRef}></input>
 				<br />
-				<label htmlFor="publisher-field">Publisher: </label>
+				<label htmlFor="model-field">Publisher: </label>
 				<input id="publisher-field" type="text" ref={props.addModelRef}></input>
 				<br />
 				<label htmlFor="price-field">Price: </label>
